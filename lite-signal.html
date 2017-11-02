@@ -39,10 +39,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() {return "lite-signal"};
 
       connectedCallback() {
+        super.connectedCallback();
+
         signals.push(this);
       }
 
       disconnectedCallback() {
+        super.disconnectedCallback();
+
         var i = signals.indexOf(this);
         if (i >= 0) {
           signals.splice(i, 1);
