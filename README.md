@@ -4,9 +4,11 @@
 <!-- _[Demo and API docs](https://elements.polymer-project.org/elements/lite-signal)_ -->
 
 
-##&lt;lite-signal&gt;
+## lite-signal
 
 `lite-signal` provides basic publish-subscribe functionality.
+
+It is a descendant of the unmaintained https://github.com/PolymerElements/iron-signals component, minus the Polymer dependency, which is unnecessary.
 
 Note: avoid using `lite-signal` whenever you can use
 a controller (parent element) to mediate communication
