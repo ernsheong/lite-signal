@@ -18,7 +18,16 @@ To send a signal, fire a custom event of type `lite-signal`, with
 a detail object containing `name` and `data` fields.
 
 ```javascript
-this.fire('lite-signal', {name: 'hello', data: null});
+this.dispatchEvent(
+  new CustomEvent("lite-signal", {
+    bubbles: true,
+    compose: true,
+    detail: {
+      name: "hello",
+      data: { foo: true }
+    }
+  })
+)
 ```
 
 To receive a signal, listen for `lite-signal-<name>` event on a
