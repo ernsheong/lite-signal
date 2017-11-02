@@ -21,7 +21,7 @@ a detail object containing `name` and `data` fields.
 this.dispatchEvent(
   new CustomEvent("lite-signal", {
     bubbles: true,
-    compose: true,
+    compose: true, // to cross Shadow DOM boundaries
     detail: {
       name: "hello",
       data: { foo: true }
