@@ -15,11 +15,17 @@
     "url": "git://github.com/ernsheong/lite-signal.git"
   },
   "main": "lite-signal.html",
-  "license": "MIT",
+  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/ernsheong/lite-signal/",
+  "ignore": [],
+  "dependencies": {
+    "polymer": "^2.2.0"
+  },
   "devDependencies": {
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
     "web-component-tester": "^4.0.0"
   },
-  "ignore": []
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.2"
+  }
 }
