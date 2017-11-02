@@ -8,7 +8,7 @@
 
 `lite-signal` provides basic publish-subscribe functionality.
 
-It is a descendant of the unmaintained https://github.com/PolymerElements/iron-signals component, minus the Polymer dependency, which is unnecessary.
+It is a descendant of the unmaintained https://github.com/PolymerElements/iron-signals component.
 
 Note: avoid using `lite-signal` whenever you can use
 a controller (parent element) to mediate communication
