@@ -6,7 +6,7 @@
 
 ## lite-signal
 
-`lite-signal` provides basic publish-subscribe functionality.
+`lite-signal` provides basic publish-subscribe functionality for Polymer 2.
 
 It is a descendant of the unmaintained https://github.com/PolymerElements/iron-signals component.
 
