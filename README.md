@@ -31,10 +31,17 @@ this.dispatchEvent(
 ```
 
 To receive a signal, listen for `lite-signal-<name>` event on a
-`lite-signal` element.
+`lite-signal` element within your Polymer element:
 
 ```javascript
-<lite-signal on-lite-signal-hello="{{helloSignal}}"></lite-signal>
+<lite-signal on-lite-signal-hello="helloSignalHandler"></lite-signal>
+
+...
+
+
+helloSignalHandler(e) {
+  // do something with event
+}
 ```
 
 You can fire a signal event from anywhere, and all
