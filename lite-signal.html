@@ -25,7 +25,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         // (3) local child event bubbles up to container
         // also, for performance, we avoid signals flying up the
         // tree from all over the place
-        bubbles: false,
+        bubbles: true,
+        composed: true,
         detail: data
       });
       // dispatch named-signal to all 'signals' instances,
